@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <h2>Create Your Account</h2>
+        </div>
+        <form action="signup.php" method="POST">
+            <div class="input">
+                <div class="text">
+                    <label for="Name"><span>Name:</span></label>
+                    <input type="text" name="name"required>
+                </div>
+                <div class="email">
+                    <label for="Email"><span>Email:</span></label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="pass">
+                    <label for="name"><span>Password:</span></label>
+                    <input type="text" name="pass" required>
+                </div>
+                <div class="cpass">
+                    <label for="CPassword"><span>Confirm Password:</span></label>
+                    <input type="text" name="cpass" required>
+                </div>
+                <div  class="btn">
+                    <input type="submit" value="signup"  class="btn2" name="submit"><br>
+                    <input type="button" value="login"  class="btn2 btn" onclick='login()'>
+                </div>
+
+            </div>
+        </form>
+
+
+
+
+
+
+    </div>
+
+
+
+<script>
+    function login()
+    {
+        window.open('login.php');
+    }
+</script>
+
+</body>
+
+</html>
